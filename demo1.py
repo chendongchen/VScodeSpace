@@ -135,17 +135,22 @@ import math
 
 # 1,2,...] 相当于 x[1,2,:,:,:]，
 # 迭代对多维数组进行 迭代（Iterating） 是相对于第一个轴完成的：如果想要对数组中的每个元素执行操作，可以使用flat属性，该属性是数组的所有元素的迭代器：
-b = np.random.random((4, 5))
-print( b )
-for row in b:
-     print(row)
-# 但是，如果想要对数组中的每个元素执行操作，可以使用flat属性，该属性是数组的所有元素的迭代器：
+# b = np.random.random((4, 5))
+# print( b )
+# for row in b:
+#      print(row)
+# # 但是，如果想要对数组中的每个元素执行操作，可以使用flat属性，该属性是数组的所有元素的迭代器：
 
-for element in b.flat:
-     print(element)
+# for element in b.flat:
+#      print(element)
 
 # this is for testing environment of packages 
 
 # x = np.linspace(0, 200, 1000)  # Create a list of evenly-spaced numbers over the range
 # plt.plot(x, np.sin(x))       # Plot the sine of each x point
 # plt.show()                  # Display 
+
+a = np.arange(10)
+b = a
+if a is b:
+     print("true")
